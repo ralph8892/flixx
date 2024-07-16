@@ -28,6 +28,10 @@ ul {
   list-style: none;
 }
 
+span {
+  display: block;
+}
+
 .text-primary {
   color: var(--color-secondary);
 }
@@ -215,12 +219,25 @@ section h2 {
   padding: 10px;
 }
 
-/* Movie Details */
+/* Movie & Show Details */
 .details-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 50px 0 30px;
+}
+
+.details-top div:nth-child(2) {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .details-top {
+    display: block;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: #ccc solid 1px;
+  }
 }
 
 .details-top img {
@@ -236,9 +253,6 @@ section h2 {
 
 .details-top .btn {
   margin-top: 20px;
-}
-
-.details-bottom {
 }
 
 .details-bottom li {
@@ -328,16 +342,15 @@ section h2 {
 
 /* Alert */
 .alert {
-  background: red;
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
-.alert-success {
+.success {
   background: green;
 }
 
-.alert-error {
+.error {
   background: red;
 }
