@@ -1,3 +1,5 @@
+import MOVIE_DB_API_KEY from "./ak";
+
 const global = {
   currentPage: window.location.pathname,
   search: {
@@ -8,7 +10,7 @@ const global = {
     totalResults: 0
   },
   api: {
-    apiKey: '72cb460a303c46d2738994fddbaea2ca',
+    apiKey: MOVIE_DB_API_KEY,
     apiUrl: 'https://api.themoviedb.org/3/'    
   }
 };
